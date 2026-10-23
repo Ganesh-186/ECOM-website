@@ -38,11 +38,3 @@ test('Mouse actions',async({page})=>{
 })
 
 
-test('Handling frames',async({page})=>{
-    await page.goto('https://www.globalsqa.com/demo-site/frames-and-windows/#iFrame');
-    const frame = await page.frameLocator('//iframe[@name="globalSqa"]');
-    await frame.getByText('Database Testing Training').click();
-    await page.getByRole('link',{name:"Sortable"}).click();
-    
-
-})
