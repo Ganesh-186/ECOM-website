@@ -32,6 +32,7 @@ test('Mouse actions',async({page})=>{
     await page.locator('#droppable').hover();
     await page.mouse.up();
 
+    await page.waitForTimeout(5000);
 
 
 
